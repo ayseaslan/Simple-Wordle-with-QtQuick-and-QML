@@ -1,1 +1,1 @@
-A Simple Wordle application using QtQuick and QML in visual studio. 
+A simple wordle application using QtQuick and QML in visual studio. 
