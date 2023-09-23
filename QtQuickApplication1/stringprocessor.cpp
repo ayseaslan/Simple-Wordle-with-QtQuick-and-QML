@@ -70,7 +70,8 @@ bool StringProcessor::validInput(const QString& input) {
     return found;
 }
 
-QString StringProcessor::getCharArrayContents() const {
+QString StringProcessor::getCharArrayContents() {
     // Convert the char array to QString
-    return QString(letters_actual).toUpper();
+    const char* charss = letters_actual;
+    return QString(charss);
 }

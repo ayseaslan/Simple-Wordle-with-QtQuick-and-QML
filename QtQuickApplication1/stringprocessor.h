@@ -22,14 +22,12 @@ class StringProcessor : public QObject
 public:
     explicit StringProcessor(QObject* parent = nullptr);
    
-    char letters_actual[5] = { 'b','r', 'e', 'a', 'd' };
+    char letters_actual[6] = { 'b','r', 'e', 'a', 'd' , '\0'};
    
    
-    Q_INVOKABLE QString getCharArrayContents() const;
-    
-
 public slots:
     QString processString(const QString& input);
+    QString getCharArrayContents();
     bool validInput(const QString& input);
     void assignWord(const QString& input) {
 
